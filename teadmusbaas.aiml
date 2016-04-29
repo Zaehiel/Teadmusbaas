@@ -861,43 +861,43 @@
 </topic>
 <!--vaheajad-->
 <category>
-	<pattern>* VAHEAEG *</pattern>
+	<pattern>_ VAHEAEG _</pattern>
 	<template><srai><set name="topic">vaheaeg</set> <star index="1"/> <star index="2"/></srai></template>
 </category>
 <category>
-	<pattern>* VAHEAEG</pattern>
+	<pattern>_ VAHEAEG</pattern>
 	<template><srai><set name="topic">vaheaeg</set> <star index="1"/></srai></template>
 </category>
 <category>
-	<pattern>VAHEAEG *</pattern>
+	<pattern>VAHEAEG _</pattern>
 	<template><srai><set name="topic">vaheaeg</set> <star index="1"/></srai></template>
 </category>
 <category>
-	<pattern>* VAHEAJAD *</pattern>
+	<pattern>_ VAHEAJAD _</pattern>
 	<template><srai><set name="topic">vaheaeg</set> <star index="1"/> <star index="2"/></srai></template>
 </category>
 <category>
-	<pattern>* VAHEAJAD</pattern>
+	<pattern>_ VAHEAJAD</pattern>
 	<template><srai><set name="topic">vaheaeg</set> <star index="1"/></srai></template>
 </category>
 <category>
-	<pattern>VAHEAJAD *</pattern>
+	<pattern>VAHEAJAD _</pattern>
 	<template><srai><set name="topic">vaheaeg</set> <star index="1"/></srai></template>
 </category>
 <category>
-	<pattern>* SUVEVAHEAEG</pattern>
+	<pattern>_ SUVEVAHEAEG</pattern>
 	<template><srai><set name="topic">suvevaheaeg</set> <star index="1"/></srai></template>
 </category>
 <category>
-	<pattern>* JÕULUVAHEAEG</pattern>
+	<pattern>_ JÕULUVAHEAEG</pattern>
 	<template><srai><set name="topic">jõuluvaheaeg</set> <star index="1"/></srai></template>
 </category>
 <category>
-	<pattern>* SUVEVAHEAEG *</pattern>
+	<pattern>_ SUVEVAHEAEG _</pattern>
 	<template><srai><set name="topic">suvevaheaeg</set> <star index="1"/> <star index="2"/></srai></template>
 </category>
 <category>
-	<pattern>* JÕULUVAHEAEG *</pattern>
+	<pattern>_ JÕULUVAHEAEG _</pattern>
 	<template><srai><set name="topic">jõuluvaheaeg</set> <star index="1"/> <star index="2"/></srai></template>
 </category>
 <!--vaheaja sisu-->
