@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<!--teema päring-->
+<category>
+	<pattern>RETURN TOPIC</pattern>
+	<template><get name="topic"/></template>
+</category>
+<!--tundmatud sisendid-->
+<category>
+	<pattern>*</pattern>
+	<template><random>
+	<li>Arusaamatu lause.</li>
+	<li>Tundmatu teema.</li>
+	<li>Palun olla täpsem.</li>
+	<li>Palun täpsustada.</li>
+	</random></template>
+</category>
+<!--tervitused-->
+<category>
+	<pattern>TERE *</pattern>
+	<template><srai>TREHVA</srai></template>
+</category>
+<category>
+	<pattern>TERE</pattern>
+	<template><srai>TREHVA</srai></template>
+</category>
+<category>
+	<pattern>Tervitused *</pattern>
+	<template><srai>TREHVA</srai></template>
+</category>
+<category>
+	<pattern>HEI *</pattern>
+	<template><srai>TREHVA</srai></template>
+</category>
+<category>
+	<pattern>HEI</pattern>
+	<template><srai>TREHVA</srai></template>
+</category>
+<category>
+	<pattern>TREHVA</pattern>
+	<template><random>
+	<li>Hei :)</li>
+	<li>Tere!</li>
+	</random></template>
+</category>
+<!--täname-->
+<category>
+	<pattern>* AITÄH *</pattern>
+	<template><srai>NP USER</srai></template>
+</category>
+<category>
+	<pattern>AITÄH *</pattern>
+	<template><srai>NP USER</srai></template>
+</category>
+<category>
+	<pattern>* TÄNUD</pattern>
+	<template><srai>NP USER</srai></template>
+</category>
+<category>
+	<pattern>* TÄNUD *</pattern>
+	<template><srai>NP USER</srai></template>
+</category>
+<category>
+	<pattern>NP USER</pattern>
+	<template><random>
+	<li>Palun!</li>
+	<li>Aga palun =)</li>
+	<li>=)</li>
+	</random></template>
+</category>
+<!--tagasiside-->
+<category>
+	<pattern>SA OLED *</pattern>
+	<template>Miks sa arvad, et ma olen <star index="1"/></template>
+</category>
+<category>
+	<pattern>SINA OLED *</pattern>
+	<template>Miks sa arvad, et ma olen <star index="1"/></template>
+</category>
+<category>
+	<pattern>SEST *</pattern>
+	<template>...</template>
+</category>
+<!--ÕIS-->
+<category>
+	<pattern>* ÕIS *</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* ÕISI *</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>ÕISI *</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* ÕISI</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* ÕPPEINFOSÜSTEEM *</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* ÕPPEINFOSÜSTEEM</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* ÕIS</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* REGISTREERIMINE AINETESSE *</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* AINETESSE REGISTREERIMINE *</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* AINETESSE REGISTREERIDA *</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* REGISTREERIDA AINETESSE *</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* REGISTREERIMINE AINETESSE</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* AINETESSE REGISTREERIMINE</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* AINETESSE REGISTREERIDA</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* REGISTREERIDA AINETESSE</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* REGISTREERIN AINETESSE</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* AINETESSE REGISTREERIN</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* AINETESSE * REGISTREERIDA</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* AINETESSE * REGISTREERIDA *</pattern>
+	<template><srai><set name="topic">õis</set> <star index="1"/> <star index="2"/> <star index="3"/></srai></template>
+</category>
+<!--ÕISI sisu-->
+<topic name="õis">
+<category>
+	<pattern>* MIS ASI ON *</pattern>
+	<template><srai>MIS ON ÕIS</srai></template>
+</category>
+<category>
+	<pattern>* MIS ASI ON</pattern>
+	<template><srai>MIS ON ÕIS</srai></template>
+</category>
+<category>
+	<pattern>MIS ASI ON *</pattern>
+	<template><srai>MIS ON ÕIS</srai></template>
+</category>
+<category>
+	<pattern>* MIS ON *</pattern>
+	<template><srai>MIS ON ÕIS</srai></template>
+</category>
+<category>
+	<pattern>* MIS ON</pattern>
+	<template><srai>MIS ON ÕIS</srai></template>
+</category>
+<category>
+	<pattern>MIS ON *</pattern>
+	<template><srai>MIS ON ÕIS</srai></template>
+</category>
+<category>
+	<pattern>MIS ON ÕIS</pattern>
+	<template>ÕIS on elektrooniline keskkond õppetöö reguleerimiseks.</template>
+</category>
+<category>
+	<pattern>MILLE JAOKS * ÕIS</pattern>
+	<template><srai>MILLE JAOKS ON ÕIS</srai></template>
+</category>
+<category>
+	<pattern>MILLE JAOKS ÕIS *</pattern>
+	<template><srai>MILLE JAOKS ON ÕIS</srai></template>
+</category>
+<category>
+	<pattern>MILLE JAOKS * ÕIS *</pattern>
+	<template><srai>MILLE JAOKS ON ÕIS</srai></template>
+</category>
+<category>
+	<pattern>MILLE JAOKS * ÕPPEINFOSÜSTEEM</pattern>
+	<template><srai>MILLE JAOKS ON ÕIS</srai></template>
+</category>
+<category>
+	<pattern>MILLE JAOKS ÕPPEINFOSÜSTEEM *</pattern>
+	<template><srai>MILLE JAOKS ON ÕIS</srai></template>
+</category>
+<category>
+	<pattern>MILLE JAOKS * ÕPPEINFOSÜSTEEM *</pattern>
+	<template><srai>MILLE JAOKS ON ÕIS</srai></template>
+</category>
+<category>
+	<pattern>MILLE JAOKS ON ÕIS</pattern>
+	<template>ÕISi eesmärk on lihtsustada tudengil ainetesse ja eksamitesse registreerumist. 
+	Anda ülevaade õppekavast ja selle täitmisest.</template>
+</category>
+<category>
+	<pattern>* MILLAL *</pattern>
+	<template><srai>MILLAL REG</srai></template>
+</category>
+<category>
+	<pattern>* MILLAL</pattern>
+	<template><srai>MILLAL REG</srai></template>
+</category>
+<category>
+	<pattern>MILLAL SAAB REGISTREERIDA</pattern>
+	<template><srai>MILLAL REG</srai></template>
+</category>
+<category>
+	<pattern>MILLAL SAAB AINETESSE REGISTREERIDA</pattern>
+	<template><srai>MILLAL REG</srai></template>
+</category>
+<category>
+	<pattern>MILLAL REGISTREERIDA AINETESSE</pattern>
+	<template><srai>MILLAL REG</srai></template>
+</category>
+<category>
+	<pattern>MILLAL * AINETESSE REGISTREERIDA *</pattern>
+	<template><srai>MILLAL REG</srai></template>
+</category>
+<category>
+	<pattern>MILLAL REG</pattern>
+	<template>Ainetesse saab registreerida semestrite alguses.</template>
+</category>
+<category>
+	<pattern>* KUIDAS *</pattern>
+	<template><srai>KUIDAS REG</srai></template>
+</category>
+<category>
+	<pattern>* KUIDAS</pattern>
+	<template><srai>KUIDAS REG</srai></template>
+</category>
+<category>
+	<pattern>KUIDAS *</pattern>
+	<template><srai>KUIDAS REG</srai></template>
+</category>
+<category>
+	<pattern>KUIDAS REG</pattern>
+	<template>Ainetesse tuleb registreerida Õppeinfosüsteemi keskkonnas: Õpingukavad -> Minu õpingukavad.</template>
+</category>
+<category>
+	<pattern>* ÕPPEAINET *</pattern>
+	<template><srai>AINET <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>ÕPPEAINET *</pattern>
+	<template><srai>AINET <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* AINET EI OLE *</pattern>
+	<template><srai>AINE PUUDUB</srai></template>
+</category>
+<category>
+	<pattern>* AINET * EI OLE *</pattern>
+	<template><srai>AINE PUUDUB</srai></template>
+</category>
+<category>
+	<pattern>AINET EI OLE *</pattern>
+	<template><srai>AINE PUUDUB</srai></template>
+</category>
+<category>
+	<pattern>AINE PUUDUB</pattern>
+	<template>Kui õppeaine ei ole registreerimiseks nimekirjas siis võta ühendust oma instituudi õppeassistendiga.</template>
+</category>
+<category>
+	<pattern>* KUS *</pattern>
+	<template><srai>KUS REG</srai></template>
+</category>
+<category>
+	<pattern>KUS *</pattern>
+	<template><srai>KUS REG</srai></template>
+</category>
+<category>
+	<pattern>KUS REG</pattern>
+	<template>Ainetesse saab registreerida Õppeinfosüsteemis (ÕIS), aadressil: ois.tlu.ee</template>
+</category>
+<category>
+	<pattern>* MIKS * EI SAA *</pattern>
+	<template><srai>EI SAA REG</srai></template>
+</category>
+<category>
+	<pattern>* MIKS * EI SAA</pattern>
+	<template><srai>EI SAA REG</srai></template>
+</category>
+<category>
+	<pattern>* MIKS EI SAA *</pattern>
+	<template><srai>EI SAA REG</srai></template>
+</category>
+<category>
+	<pattern>* MIKS * MAAS *</pattern>
+	<template><srai>EI SAA REG</srai></template>
+</category>
+<category>
+	<pattern>EI SAA REG</pattern>
+	<template><random>
+	<li>Võimalik, et serveritel käib tehniline hooldus. Palun proovige mõne hetke pärast uuesti.</li>
+	<li>Võimalik, et serverid on liigse koormuse tõttu maas. Palun proovige mõne hetke pärast uuesti.</li>
+	</random></template>
+</category>
+</topic>
+<!--semestrid-->
+<category>
+	<pattern>MILLAL ALGAB SEMESTER</pattern>
+	<template>Kevadsemester või sügissemester?</template>
+</category>
+<category>
+	<pattern>KEVADSEMESTER</pattern>
+	<that>KEVADSEMESTER VÕI SÜGISSEMESTER</that>
+	<template><srai><set name="topic">Kevadsemester</set> ALGAB</srai></template>
+</category>
+<category>
+	<pattern>SÜGISSEMESTER</pattern>
+	<that>KEVADSEMESTER VÕI SÜGISSEMESTER</that>
+	<template><srai><set name="topic">Sügissemester</set> ALGAB</srai></template>
+</category>
+<category>
+	<pattern>_ SÜGISSEMESTER _</pattern>
+	<template><srai><set name="topic">Sügissemester</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>_ SÜGISSEMESTER</pattern>
+	<template><srai><set name="topic">Sügissemester</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>_ SÜGISSEMESTRIL _</pattern>
+	<template><srai><set name="topic">Sügissemester</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>_ SÜGISSEMESTRI _</pattern>
+	<template><srai><set name="topic">Sügissemester</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>_ SÜGISSEMESTRIL</pattern>
+	<template><srai><set name="topic">Sügissemester</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>_ SÜGISEL _</pattern>
+	<template><srai><set name="topic">Sügissemester</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+
+<category>
+	<pattern>_ KEVADSEMESTER _</pattern>
+	<template><srai><set name="topic">Kevadsemester</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>_ KEVADSEMESTER</pattern>
+	<template><srai><set name="topic">Kevadsemester</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>_ KEVADSEMESTRIL _</pattern>
+	<template><srai><set name="topic">Kevadsemester</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>_ KEVADSEMESTRI _</pattern>
+	<template><srai><set name="topic">Kevadsemester</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>_ KEVADSEMESTRIL</pattern>
+	<template><srai><set name="topic">Kevadsemester</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>_ KEVADEL _</pattern>
+	<template><srai><set name="topic">Kevadsemester</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<!--sügissemestri sisu-->
+<topic name="Sügissemester">
+<category>
+	<pattern>* KESTAB</pattern>
+	<template><srai>KESTVUS</srai></template>
+</category>
+<category>
+	<pattern>* KESTAB *</pattern>
+	<template><srai>KESTVUS</srai></template>
+</category>
+<category>
+	<pattern>KESTVUS</pattern>
+	<template>Algab 5. septembril 2016 ja lõpeb 18. detsembril 2016.</template>
+</category>
+<category>
+	<pattern>* LÕPEB</pattern>
+	<template><srai>LÕPP</srai></template>
+</category>
+<category>
+	<pattern>LÕPEB *</pattern>
+	<template><srai>LÕPP</srai></template>
+</category>
+<category>
+	<pattern>* LÕPEB *</pattern>
+	<template><srai>LÕPP</srai></template>
+</category>
+<category>
+	<pattern>LÕPP</pattern>
+	<template>18. detsembril 2016</template>
+</category>
+<category>
+	<pattern>* ALGAB</pattern>
+	<template><srai>ALGUS</srai></template>
+</category>
+<category>
+	<pattern>ALGAB *</pattern>
+	<template><srai>ALGUS</srai></template>
+</category>
+<category>
+	<pattern>* ALGAB *</pattern>
+	<template><srai>ALGUS</srai></template>
+</category>
+<category>
+	<pattern>* ALGUS</pattern>
+	<template><srai>ALGUS</srai></template>
+</category>
+<category>
+	<pattern>* ALGUS *</pattern>
+	<template><srai>ALGUS</srai></template>
+</category>
+<category>
+	<pattern>ALGUS</pattern>
+	<template>5. septembril 2016</template>
+</category>
+<category>
+	<pattern>* KESTAB VAHENÄDAL</pattern>
+	<template><srai>VAHENÄDAL</srai></template>
+</category>
+<category>
+	<pattern>* VAHENÄDAL KESTAB</pattern>
+	<template><srai>VAHENÄDAL</srai></template>
+</category>
+<category>
+	<pattern>* KESTAB VAHENÄDAL *</pattern>
+	<template><srai>VAHENÄDAL</srai></template>
+</category>
+<category>
+	<pattern>* VAHENÄDAL</pattern>
+	<template><srai>VAHENÄDAL</srai></template>
+</category>
+<category>
+	<pattern>* VAHENÄDAL *</pattern>
+	<template><srai>VAHENÄDAL</srai></template>
+</category>
+<category>
+	<pattern>VAHENÄDAL *</pattern>
+	<template><srai>VAHENÄDAL</srai></template>
+</category>
+<category>
+	<pattern>VAHENÄDAL</pattern>
+	<template>Sügissemestri vahenädal toimub 24.10-30.10.2016.</template>
+</category>
+<category>
+	<pattern>* EKSAMISESSIOON</pattern>
+	<template><srai>EKSAMID</srai></template>
+</category>
+<category>
+	<pattern>* EKSAMISESSIOON *</pattern>
+	<template><srai>EKSAMID</srai></template>
+</category>
+<category>
+	<pattern>EKSAMISESSIOON *</pattern>
+	<template><srai>EKSAMID</srai></template>
+</category>
+<category>
+	<pattern>* EKSAMID *</pattern>
+	<template><srai>EKSAMID</srai></template>
+</category>
+<category>
+	<pattern>EKSAMID *</pattern>
+	<template><srai>EKSAMID</srai></template>
+</category>
+<category>
+	<pattern>* EKSAMID</pattern>
+	<template><srai>EKSAMID</srai></template>
+</category>
+<category>
+	<pattern>EKSAMID</pattern>
+	<template>Sügisel toimuvad eksamid vahenädalal ja vahemikul 19.12.2016 kuni 22.01.2017.</template>
+</category>
+<category>
+	<pattern>AGA KEVADEL</pattern>
+	<that>SÜGISEL TOIMUVAD EKSAMID VAHENÄDALAL JA VAHEMIKUL 19 12 2016 KUNI 22 01 2017</that>
+	<template><srai><set name="topic">Kevadsemester</set> MILLAL ON EKSAMID BLABLA</srai></template>
+</category>
+<category>
+	<pattern>AGA KEVADEL</pattern>
+	<that>SÜGISSEMESTRI VAHENÄDAL TOIMUB 24 10 30 10 2016</that>
+	<template><srai><set name="topic">Kevadsemester</set> MILLAL ON VAHENÄDAL BLABLA</srai></template>
+</category>
+<!--taotlemine-->
+<category>
+	<pattern>* TAOTLEDA *</pattern>
+	<template><srai>TAOTLUS <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* TAOTLEDA</pattern>
+	<template><srai>TAOTLUS <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* TAOTLEMINE *</pattern>
+	<template><srai>TAOTLUS <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* TAOTLEMINE</pattern>
+	<template><srai>TAOTLUS <star index="1"/></srai></template>
+</category>
+<!--taotluse täpsustamine-->
+<category>
+	<pattern>TAOTLUS * STIPENDIUMI</pattern>
+	<template><srai>STIP TAOTLEMINE</srai></template>
+</category>
+<category>
+	<pattern>TAOTLUS * STIPENDIUMI *</pattern>
+	<template><srai>STIP TAOTLEMINE</srai></template>
+</category>
+<category>
+	<pattern>TAOTLUS STIPENDIUMI *</pattern>
+	<template><srai>STIP TAOTLEMINE</srai></template>
+</category>
+<category>
+	<pattern>TAOTLUS * TOETUSI *</pattern>
+	<template><srai>TOETUS TAOTLEMINE</srai></template>
+</category>
+<category>
+	<pattern>TAOTLUS * TOETUSI</pattern>
+	<template><srai>TOETUS TAOTLEMINE</srai></template>
+</category>
+<category>
+	<pattern>TAOTLUS TOETUSI *</pattern>
+	<template><srai>TOETUS TAOTLEMINE</srai></template>
+</category>
+<!--Taotluste info-->
+<category>
+	<pattern>TOETUS TAOTLEMINE</pattern>
+	<template>Toetuste taotlemine algab 15 september. 
+			Toetusi saab taotleda kuni 1. oktoober.</template>
+</category>
+<category>
+	<pattern>STIP TAOTLEMINE</pattern>
+	<template>Stipendiumite taotlemine algab 15 september. 
+			Stipendiumit saab taotleda kuni 1. oktoober.</template>
+</category>
+<!--eelnädal-->
+<category>
+	<pattern>* EELNÄDAL *</pattern>
+	<template><srai>EELN <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* EELNÄDAL</pattern>
+	<template><srai>EELN <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* EELNÄDALAL *</pattern>
+	<template><srai>EELN <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* EELNÄDALAL</pattern>
+	<template><srai>EELN <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* EELNÄDAL</pattern>
+	<that>* TOIMUB *</that>
+	<template><srai>EELN KESTVUS</srai></template>
+</category>
+<category>
+	<pattern>EELN * MILLAL</pattern>
+	<template><srai>EELN KESTVUS</srai></template>
+</category>
+<category>
+	<pattern>EELN MILLAL *</pattern>
+	<template><srai>EELN KESTVUS</srai></template>
+</category>
+<category>
+	<pattern>EELN * MILLAL *</pattern>
+	<template><srai>EELN KESTVUS</srai></template>
+</category>
+<category>
+	<pattern>EELN * TOIMUB</pattern>
+	<template><srai>EELN KESTVUS</srai></template>
+</category>
+<category>
+	<pattern>EELN * TOIMUB *</pattern>
+	<template><srai>EELN KESTVUS</srai></template>
+</category>
+<category>
+	<pattern>EELN KESTVUS</pattern>
+	<template>Sügissemestri eelnädal on 29.08 - 04.09.2016</template>
+</category>
+<category>
+	<pattern>EELN * TOIMUB</pattern>
+	<template><srai>EELN TOIMUB</srai></template>
+</category>
+<category>
+	<pattern>EELN * TOIMUB *</pattern>
+	<template><srai>EELN TOIMUB</srai></template>
+</category>
+<category>
+	<pattern>EELN * TEHA</pattern>
+	<template><srai>EELN TOIMUB</srai></template>
+</category>
+<category>
+	<pattern>EELN * TEHA *</pattern>
+	<template><srai>EELN TOIMUB</srai></template>
+</category>
+<category>
+	<pattern>EELN TOIMUB</pattern>
+	<template>Sügissemestri eelnädalal toimuvad sissejuhatvad infotunnid uutele tudengitele, tsükliõppe õppesessioon ja saab esitada erinevaid taotlusi/avaldusi.</template>
+</category>
+</topic>
+<!--kevadsemestri sisu-->
+<topic name="Kevadsemester">
+<category>
+	<pattern>* KESTAB</pattern>
+	<template><srai>KESTVUS</srai></template>
+</category>
+<category>
+	<pattern>* KESTAB *</pattern>
+	<template><srai>KESTVUS</srai></template>
+</category>
+<category>
+	<pattern>KESTVUS</pattern>
+	<template>Algab 23.01.2017 ja lõpeb 30.06.2017.</template>
+</category>
+<category>
+	<pattern>* LÕPEB</pattern>
+	<template><srai>LÕPP</srai></template>
+</category>
+<category>
+	<pattern>LÕPEB *</pattern>
+	<template><srai>LÕPP</srai></template>
+</category>
+<category>
+	<pattern>* LÕPEB *</pattern>
+	<template><srai>LÕPP</srai></template>
+</category>
+<category>
+	<pattern>LÕPP</pattern>
+	<template>30. juunil 2017</template>
+</category>
+<category>
+	<pattern>* ALGAB</pattern>
+	<template><srai>ALGUS</srai></template>
+</category>
+<category>
+	<pattern>ALGAB *</pattern>
+	<template><srai>ALGUS</srai></template>
+</category>
+<category>
+	<pattern>* ALGAB *</pattern>
+	<template><srai>ALGUS</srai></template>
+</category>
+<category>
+	<pattern>* ALGUS</pattern>
+	<template><srai>ALGUS</srai></template>
+</category>
+<category>
+	<pattern>* ALGUS *</pattern>
+	<template><srai>ALGUS</srai></template>
+</category>
+<category>
+	<pattern>ALGUS</pattern>
+	<template>23. jaanuaril 2017</template>
+</category>
+<category>
+	<pattern>* KESTAB VAHENÄDAL</pattern>
+	<template><srai>VAHENÄDAL</srai></template>
+</category>
+<category>
+	<pattern>* VAHENÄDAL KESTAB</pattern>
+	<template><srai>VAHENÄDAL</srai></template>
+</category>
+<category>
+	<pattern>* KESTAB VAHENÄDAL *</pattern>
+	<template><srai>VAHENÄDAL</srai></template>
+</category>
+<category>
+	<pattern>* VAHENÄDAL</pattern>
+	<template><srai>VAHENÄDAL</srai></template>
+</category>
+<category>
+	<pattern>* VAHENÄDAL *</pattern>
+	<template><srai>VAHENÄDAL</srai></template>
+</category>
+<category>
+	<pattern>VAHENÄDAL *</pattern>
+	<template><srai>VAHENÄDAL</srai></template>
+</category>
+<category>
+	<pattern>VAHENÄDAL</pattern>
+	<template>Kevadsemestri vahenädal toimub 20.03-26.03.2017.</template>
+</category>
+<category>
+	<pattern>* EKSAMISESSIOON</pattern>
+	<template><srai>EKSAMID</srai></template>
+</category>
+<category>
+	<pattern>* EKSAMISESSIOON *</pattern>
+	<template><srai>EKSAMID</srai></template>
+</category>
+<category>
+	<pattern>EKSAMISESSIOON *</pattern>
+	<template><srai>EKSAMID</srai></template>
+</category>
+<category>
+	<pattern>* EKSAMID *</pattern>
+	<template><srai>EKSAMID</srai></template>
+</category>
+<category>
+	<pattern>EKSAMID *</pattern>
+	<template><srai>EKSAMID</srai></template>
+</category>
+<category>
+	<pattern>* EKSAMID</pattern>
+	<template><srai>EKSAMID</srai></template>
+</category>
+<category>
+	<pattern>EKSAMID</pattern>
+	<template>Kevadel toimuvad eksamid vahenädalal ja vahemikul 22.05.-11.06.2017.</template>
+</category>
+<!--that kasutamine spetsiifiliseks kontekstiks-->
+<category>
+	<pattern>AGA SÜGISEL</pattern>
+	<that>KEVADEL TOIMUVAD EKSAMID VAHENÄDALAL JA VAHEMIKUL 22 05 11 06 2017</that>
+	<template><srai><set name="topic">Sügissemester</set> MILLAL ON EKSAMID FILLER</srai></template>
+</category>
+<category>
+	<pattern>AGA SÜGISEL</pattern>
+	<that>KEVADSEMESTRI VAHENÄDAL TOIMUB 20 03 26 03 2017</that>
+	<template><srai><set name="topic">Sügissemester</set> MILLAL ON VAHENÄDAL FILLER</srai></template>
+</category>
+<!--taotlemine-->
+<category>
+	<pattern>* TAOTLEDA *</pattern>
+	<template><srai>TAOTLUS <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* TAOTLEDA</pattern>
+	<template><srai>TAOTLUS <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* TAOTLEMINE *</pattern>
+	<template><srai>TAOTLUS <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* TAOTLEMINE</pattern>
+	<template><srai>TAOTLUS <star index="1"/></srai></template>
+</category>
+<!--taotluse täpsustamine-->
+<category>
+	<pattern>TAOTLUS * STIPENDIUMI</pattern>
+	<template><srai>STIP TAOTLEMINE</srai></template>
+</category>
+<category>
+	<pattern>TAOTLUS * STIPENDIUMI *</pattern>
+	<template><srai>STIP TAOTLEMINE</srai></template>
+</category>
+<category>
+	<pattern>TAOTLUS STIPENDIUMI *</pattern>
+	<template><srai>STIP TAOTLEMINE</srai></template>
+</category>
+<category>
+	<pattern>TAOTLUS * TOETUSI *</pattern>
+	<template><srai>TOETUS TAOTLEMINE</srai></template>
+</category>
+<category>
+	<pattern>TAOTLUS * TOETUSI </pattern>
+	<template><srai>TOETUS TAOTLEMINE</srai></template>
+</category>
+<category>
+	<pattern>TAOTLUS TOETUSI *</pattern>
+	<template><srai>TOETUS TAOTLEMINE</srai></template>
+</category>
+<!--Taotluste info-->
+<category>
+	<pattern>TOETUS TAOTLEMINE</pattern>
+	<template>Toetuste taotlemine algab 15. veebruaril. 
+			Toetusi saab taotleda kuni 1. märtsini.</template>
+</category>
+<category>
+	<pattern>STIP TAOTLEMINE</pattern>
+	<template>Stipendiumite taotlemine algab 15 veebruaril. 
+			Stipendiumit saab taotleda kuni 1. märtsini.</template>
+</category>
+
+<!--eelnädal-->
+<category>
+	<pattern>* EELNÄDAL *</pattern>
+	<template><srai>EELN <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* EELNÄDAL</pattern>
+	<template><srai>EELN <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* EELNÄDALAL *</pattern>
+	<template><srai>EELN <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* EELNÄDALAL</pattern>
+	<template><srai>EELN <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* EELNÄDAL</pattern>
+	<that>* TOIMUB *</that>
+	<template><srai>EELN TOIMUB</srai></template>
+</category>
+<category>
+	<pattern>EELN * MILLAL</pattern>
+	<template><srai>EELN KESTVUS</srai></template>
+</category>
+<category>
+	<pattern>EELN MILLAL *</pattern>
+	<template><srai>EELN KESTVUS</srai></template>
+</category>
+<category>
+	<pattern>EELN * MILLAL *</pattern>
+	<template><srai>EELN KESTVUS</srai></template>
+</category>
+<category>
+	<pattern>EELN * TOIMUB</pattern>
+	<template><srai>EELN KESTVUS</srai></template>
+</category>
+<category>
+	<pattern>EELN * TOIMUB *</pattern>
+	<template><srai>EELN KESTVUS</srai></template>
+</category>
+<category>
+	<pattern>EELN KESTVUS</pattern>
+	<template>Kevadsemestri eelnädal on 23.01-29.01.2017.</template>
+</category>
+<category>
+	<pattern>EELN * TEHA</pattern>
+	<template><srai>EELN TOIMUB</srai></template>
+</category>
+<category>
+	<pattern>EELN * TEHA *</pattern>
+	<template><srai>EELN TOIMUB</srai></template>
+</category>
+<category>
+	<pattern>EELN TOIMUB</pattern>
+	<template>Kevadsemestri eelnädalal saab esitada taotlusi õppelepingu tingimuste muutmiseks, pikendada eksternõppes õppimist ja kandideerida vabanenud õppekohtadele.</template>
+</category>
+</topic>
+<!--vaheajad-->
+<category>
+	<pattern>* VAHEAEG *</pattern>
+	<template><srai><set name="topic">vaheaeg</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* VAHEAEG</pattern>
+	<template><srai><set name="topic">vaheaeg</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>VAHEAEG *</pattern>
+	<template><srai><set name="topic">vaheaeg</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* VAHEAJAD *</pattern>
+	<template><srai><set name="topic">vaheaeg</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* VAHEAJAD</pattern>
+	<template><srai><set name="topic">vaheaeg</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>VAHEAJAD *</pattern>
+	<template><srai><set name="topic">vaheaeg</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* SUVEVAHEAEG</pattern>
+	<template><srai><set name="topic">suvevaheaeg</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* JÕULUVAHEAEG</pattern>
+	<template><srai><set name="topic">jõuluvaheaeg</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* SUVEVAHEAEG *</pattern>
+	<template><srai><set name="topic">suvevaheaeg</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>* JÕULUVAHEAEG *</pattern>
+	<template><srai><set name="topic">jõuluvaheaeg</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<!--vaheaja sisu-->
+<topic name="vaheaeg">
+<category>
+	<pattern>* MILLAL *</pattern>
+	<template><srai>MILLAL</srai></template>
+</category>
+<category>
+	<pattern>* MILLAL</pattern>
+	<template><srai>MILLAL</srai></template>
+</category>
+<category>
+	<pattern>* KAUA *</pattern>
+	<template><srai>KAUA</srai></template>
+</category>
+<category>
+	<pattern>KAUA *</pattern>
+	<template><srai>KAUA</srai></template>
+</category>
+<category>
+	<pattern>MILLAL</pattern>
+	<template>Vaheajad on suvel ja talvel.</template>
+</category>
+<category>
+	<pattern>KAUA</pattern>
+	<template>Suvevaheaeg kestab 2 kuud ja jõuluvaheaeg kestab nädala.</template>
+</category>
+</topic>
+<!--jõukuvaheaja sisu-->
+<topic name="jõuluvaheaeg">
+<category>
+	<pattern>_ SUVEVAHEAEG _</pattern>
+	<template><srai><set name="topic">suvevaheaeg</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>_ SUVEVAHEAEG</pattern>
+	<template><srai><set name="topic">suvevaheaeg</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* MILLAL *</pattern>
+	<template><srai>MILLAL</srai></template>
+</category>
+<category>
+	<pattern>* MILLAL</pattern>
+	<template><srai>MILLAL</srai></template>
+</category>
+<category>
+	<pattern>* ALGAB *</pattern>
+	<template><srai>ALGAB</srai></template>
+</category>
+<category>
+	<pattern>* ALGAB</pattern>
+	<template><srai>ALGAB</srai></template>
+</category>
+<category>
+<pattern>* LÕPEB *</pattern>
+<template><srai>LÕPEB</srai></template>
+</category>
+<category>
+	<pattern>* LÕPEB</pattern>
+	<template><srai>LÕPEB</srai></template>
+</category>
+<category>
+	<pattern>* KAUA *</pattern>
+	<template><srai>KAUA</srai></template>
+</category>
+<category>
+	<pattern>KAUA *</pattern>
+	<template><srai>KAUA</srai></template>
+</category>
+<category>
+	<pattern>ALGAB</pattern>
+	<template>Jõuluvaheag algab 24.12.2016.</template>
+</category>
+<category>
+	<pattern>LÕPEB</pattern>
+	<template>Jõuluvaheag lõpeb 01.01.2017.</template>
+</category>
+<category>
+	<pattern>MILLAL</pattern>
+	<template>Jõuluvaheag on 24.12.2016 kuni 01.01.2017.</template>
+</category>
+<category>
+	<pattern>KAUA</pattern>
+	<template>Jõuluvaheaeg kestab 1 nädal.</template>
+</category>
+</topic>
+<!--suvevaheaja sisu-->
+<topic name="suvevaheaeg">
+<category>
+	<pattern>_ JÕULUVAHEAEG _</pattern>
+	<template><srai><set name="topic">jõuluvaheaeg</set> <star index="1"/> <star index="2"/></srai></template>
+</category>
+<category>
+	<pattern>_ JÕULUVAHEAEG</pattern>
+	<template><srai><set name="topic">jõuluvaheaeg</set> <star index="1"/></srai></template>
+</category>
+<category>
+	<pattern>* MILLAL *</pattern>
+	<template><srai>MILLAL</srai></template>
+</category>
+<category>
+	<pattern>* MILLAL</pattern>
+	<template><srai>MILLAL</srai></template>
+</category>
+<category>
+	<pattern>* ALGAB *</pattern>
+	<template><srai>ALGAB</srai></template>
+</category>
+<category>
+	<pattern>* ALGAB</pattern>
+	<template><srai>ALGAB</srai></template>
+</category>
+<category>
+	<pattern>* LÕPEB *</pattern>
+	<template><srai>LÕPEB</srai></template>
+</category>
+<category>
+	<pattern>* LÕPEB</pattern>
+	<template><srai>LÕPEB</srai></template>
+</category>
+<category>
+	<pattern>* KAUA *</pattern>
+	<template><srai>KAUA</srai></template>
+</category>
+<category>
+	<pattern>KAUA *</pattern>
+	<template><srai>KAUA</srai></template>
+</category>
+<category>
+	<pattern>ALGAB</pattern>
+	<template>Suvevaheag algab 03.07.2017.</template>
+</category>
+<category>
+	<pattern>LÕPEB</pattern>
+	<template>Suvevaheag lõpeb 27.08.2017.</template>
+</category>
+<category>
+	<pattern>MILLAL</pattern>
+	<template>Suvevaheag on 03.07.2017 kuni 27.08.2017.</template>
+</category>
+<category>
+	<pattern>KAUA</pattern>
+	<template>Suvevaheaeg kestab 2 kuud.</template>
+</category>
+</topic>
+</aiml>
